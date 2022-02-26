@@ -1,0 +1,38 @@
+/* colormode.js v 1.0.0 */
+
+/* Darkmode or if javascript not working */
+html:not([mode]):root, html[mode=dark]:root {
+    color-scheme: dark;
+
+    --background-color: rgb(32, 33, 36);
+}
+
+/* Similar mode ( Darkmode ) */
+@media (prefers-color-scheme: dark) {
+    html[mode=similar]:root {
+        color-scheme: dark;
+    
+        --background-color: rgb(32, 33, 36);
+    }
+}
+
+/* Lightmode */
+html[mode=light]:root {
+    color-scheme: light;
+
+    --background-color: rgb(255, 255, 255);
+}
+
+/* Similar mode ( Lightmode ) */
+@media (prefers-color-scheme: light) {
+    html[mode=similar]:root {
+        color-scheme: light;
+    
+        --background-color: rgb(255, 255, 255);
+    }
+}
+
+/* Your code */
+body {
+    background-color: var(--background-color);
+}
