@@ -4,6 +4,12 @@ This is a dynamic tool for controlling the color scheme of the page, this tool c
 هذه أداة ديناميكية للتحكم في نظام ألوان الصفحة ، ويمكن لهذه الأداة التحكم في نظام الألوان وفقًا لتفضيلات المستخدم ، بمجرد تحميل الصفحة ، فإنها تتبع نفس تفضيلات الجهاز أو مخطط آخر من اختيارك مسبقًا ، المستخدم يمكن قلب الألوان من Darkmode إلى Lightmode في أي وقت ، أو يمكن للمستخدم البقاء هادئًا واستخدام "وضع مماثل للجهاز" لتتبع تفضيلات الجهاز.
 
 ## Installation
+
+This can be considered more an explanation of creating your own tool than an explanation of how to use it.
+
+يمكن اعتبار ان هذا شرح لانشاء أداتك الخاصة اكثر من شرح كيفية استخدام هذه الاداه.
+
+
 ### html
 #### In order for the add-on to function properly, you must make sure that :
 
@@ -75,5 +81,8 @@ Now the code is working dynamically, Using ``` @media ``` rule ``` prefers-color
 الان اصبح الكود يعمل بشكل ديناميكي ، حيث نستخدم قانون ``` @media ``` ك ``` prefers-color-scheme: ``` بمعرف ``` dark ``` أو ``` light ``` لكن المستخدم لا يمكن له ان يتحكم في الوضع الا اذا قام بتغير تفضيلات جهازه لذلك لننتقل الي js .
 
 ### Js ( jQuery )
+
+
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
