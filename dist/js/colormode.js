@@ -4,7 +4,7 @@
 if (window.jQuery) 
 {
     // start colormode.js
-    $.fn.mode = function (colors, mode="similar")
+    $.fn.mode = function (colors = { dark:"rgb(32, 33, 36)", light:"rgb(255, 255, 255)" }, mode = "similar")
     {
         if ( colors )
         {
@@ -85,7 +85,7 @@ if (window.jQuery)
             console.error("colormode.js error: Colors undefined!");
         }
     }
-    $(document).mode({ dark:"rgb(32, 33, 36)", light:"rgb(255, 255, 255)" }, "light");
+    $(document).mode();
 }
 else
 {
