@@ -3,7 +3,30 @@ This is a dynamic tool for controlling the color scheme of the page, this tool c
 
 هذه أداة ديناميكية للتحكم في نظام ألوان الصفحة ، ويمكن لهذه الأداة التحكم في نظام الألوان وفقًا لتفضيلات المستخدم ، بمجرد تحميل الصفحة ، فإنها تتبع نفس تفضيلات الجهاز أو مخطط آخر من اختيارك مسبقًا ، المستخدم يمكن قلب الألوان من Darkmode إلى Lightmode في أي وقت ، أو يمكن للمستخدم البقاء هادئًا واستخدام "وضع مماثل للجهاز" لتتبع تفضيلات الجهاز.
 
-## Installation
+## Initialization
+
+```javascript
+$(document).mode();
+``` 
+
+#### Options
+
+Name | Type | Default | Description
+--- | --- | --- |--- 
+```colors``` | array | ```{ dark:"rgb(32, 33, 36)", light:"rgb(255, 255, 255)" }``` | Which colors do you prefer to work in different Modes?
+```mode``` | string | "similar" | Mode which appears on page without user instructions.
+
+#### Methods
+
+```javascript
+
+/* selector.mode('colors', mode); */
+
+$(document).mode({ dark:"rgb(0, 0, 0)", light:"rgb(255, 255, 255)" }, "light");
+
+```
+
+## Simplification
 
 This can be considered more an explanation of creating your own tool than an explanation of how to use it.
 
@@ -82,7 +105,7 @@ Now the code is working dynamically, Using ``` @media ``` rule ``` prefers-color
 
 ### Js ( jQuery )
 
-
+soon ..
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
